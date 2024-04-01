@@ -1,0 +1,1792 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('img/cursor.png'), auto;
+}
+
+body{
+    background-color: #10193c !important;
+    overflow-x: hidden;
+    color: white;
+    width: 100vw;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  h2{color: white !important};
+  p{color: rgb(255, 255, 255) !important;}
+
+a{
+    text-decoration: none !important;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white !important;
+    margin: 0vh 2vw;
+    transition: 0.2s;
+    white-space: nowrap;
+    cursor: url('img/pointer12.png'), auto;
+}
+
+a:hover{
+    transition: 0.2s;
+    transform: scale(1.04);
+    color: #4f9ddd !important;
+    cursor: url('img/pointer12.png'), auto;
+}
+
+.chamativo {
+    padding: 1.5vh 3vw;
+    margin-right: 1vw;
+    border-radius: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 10px rgb(0,140,255);
+    background: rgb(75,147,204);
+    background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+    color: white;
+}
+
+.chamativo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 18px rgb(0,140,255);
+    color: white !important;
+    cursor: url('img/pointer12.png'), auto;
+}
+
+
+/*----------------------------------------------Header----------------------------------------------*/
+header{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    background-color: #10193cf1;
+    padding: 1vh 7vw;
+    align-items: center;
+    animation-name: animaCima; 
+    animation-duration: 1.8s;   
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    z-index: 2;
+}
+
+header img{
+    max-width: 3.5%;
+}
+
+header .alignHeader{
+    display: flex;
+    align-items: center;
+}
+/*----------------------------------------------Header----------------------------------------------*/
+
+/*----------------------------------------------Projetos----------------------------------------------*/
+#projetos{
+    padding: 5vh 10vw;
+    width: 100%;
+}
+
+
+#projetos .aparece{
+    opacity: 1 !important;
+}
+
+#projetos .desaparece{
+    display: none !important;
+    opacity: 0 !important;
+}
+
+h1{
+    text-align: center;
+    font-size: 3.2em;
+    padding-top: 10vh;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.tags h3{
+    margin: 0vh 1vw;
+    cursor: url('img/pointer12.png'), auto;
+    transition: 0.3s;
+}
+
+.tags h3:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+    color: #6bc0f8;
+}
+
+.tagSelecionada{
+    transform: scale(1.05);
+    color: #6bc0f8;
+}
+
+.projetoIndividual{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10vh 0 0 0vh;
+    margin-bottom: 10vh;
+}
+
+.container{
+    width: 30vw;
+    margin-right: 7.5vw;
+}
+
+
+.container h2{
+    font-size: 2.2em;
+    color: #1863ef !important;
+}
+
+.tagsMenores{
+    color: gray;
+    font-size: 1em;
+    display: flex;
+}
+
+.tagsMenores h4{
+margin: 0 1vw 0 0;
+}
+
+.projetoIndividual .container p{
+    margin: 2vh 0vw;
+    width: 120%;
+}
+
+.botoes a{
+    margin: 2vh 2vw 0vh 0vw;
+}
+
+.container .botoes img{
+    transition: 0.35s;
+    cursor: url('img/pointer12.png'), auto;
+    filter: grayscale();
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.botoes img:hover{
+    transition: 0.35s;
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.carousel-item{
+    padding-top: -10vh;
+}
+
+.carousel-item img{
+    margin-top: 0vh;
+    width: 35vw;
+    border-radius: 16px;
+    height: 45vh;
+}
+
+.carousel-indicators{
+    margin-bottom:-7vh;
+    width: 23.5vw; /*Ajustando o botão para os lados*/
+    display: flex;
+    justify-content: baseline;
+    z-index: 0 !important;
+}
+
+.carrossel .carousel-indicators button{
+    border-radius: 50%;
+    height: 3vh;
+    width: 1.5vw;
+    cursor: url('img/pointer12.png'), auto;
+}
+
+.carrossel .carousel-indicators button:hover{
+    background-color: #6bdcf8;
+}
+/*----------------------------------------------Projetos----------------------------------------------*/
+
+main .alinhamento{
+    text-align: center;
+    margin-top: 12vh;
+    transition: 0.3s;
+}
+
+main .alinhamento button{
+padding-left: 3vw;
+padding-right: 3vw;
+font-size: 1.5em;
+border: 0px !important;
+}
+
+main .alinhamento:hover{
+    transform: scale(1.005);
+    transition: 0.3s;
+}
+
+.ativoPrevio{
+    display: none;
+}
+
+/*----------------------------------------------Contatos----------------------------------------------*/
+/*--------------------------------------------------------Contato-------------------------------------------------*/
+#contato{
+    text-align: center;
+    color: white;
+    margin: 20vh 0vw -10vh 00vw;
+    padding: 0vh 6.5vw;
+}
+
+#contato h2{
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: -8vh;
+}
+
+#contato .contatoLeft h3, p{
+    text-align: justify !important;
+    margin: 0vh 0vw;
+    width: 100%;
+}
+#contato .containerContatos .contatoLeft  p{
+    font-size: 1.1em;
+}
+
+#contato .containerContatos .contatoLeft h3{
+    font-weight: 700;
+    font-size:1.8em;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.containerContatos{
+    display: flex;
+    justify-content: space-around;
+    height: 35vw;
+    margin: 12vh 0vw 0vh 0vw;
+}
+
+#contato .contatoLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0vh 2vw;
+    width: 45vw;
+}
+
+#contato .contatoLeft .contatoDados{
+display: flex;
+align-items: center;
+justify-content: baseline;
+width: 100%;
+margin: 1vh 0vw;
+}
+
+#contato .contatoLeft .contatoDados p{
+    margin: 0vh -1vw;
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2em !important;
+}
+
+#contato .contatoLeft .contatoDados img{
+max-width: 3.8vw;
+filter: grayscale(1);
+margin-left: -2vw;
+transition: 0.3;
+}
+
+#contato .contatoLeft .contatoDados img:hover{
+filter: grayscale(0);
+transition: 0.3;
+transform: scale(1.05);
+cursor: url('img/pointer12.png'), auto;
+}
+
+
+
+#contato .contatoRight{
+    padding: 0vh 2vw;
+    width: 45vw;
+    height: 100%;
+}
+
+.contatoRight form {    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+};
+
+.contatoRight form div{
+    width: 100%;
+    height: 10vh;
+}
+.contatoRight form div input{
+    width: 100%;
+    height: 6.5vh;
+    margin-bottom: 3vh;
+    border-radius: 16px;
+    padding-left: 1.5vw;
+    background: rgb(75,147,204);
+    background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+    color: white;
+    cursor: url('img/text-editor.png'), auto;
+    border: 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+input::placeholder {
+    color: white;
+}
+
+.contatoRight form div:nth-child(3) {
+    height: 35vh;
+    margin-bottom: 3vh;
+    border-radius: 16px;
+    background: rgb(75,147,204);
+    background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+    color: white;
+}
+
+#contato .contatoRight form div:nth-child(3) textarea{
+    background: rgba(75, 146, 204, 0);
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: url('img/text-editor.png'), auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1.5vh;
+    border: 0px;
+    border-radius: 16px;
+}
+
+
+.contatoRight form div:nth-child(3) textarea::placeholder {
+    color: white;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px rgb(75, 131, 204) inset; /* aqui muda sua cor do fundo */
+    -webkit-text-fill-color: #ccc; /* Cor do texto */
+}
+
+
+
+
+#contato .contatoRight .enviaInformacao {
+color: white !important;
+text-align: center;
+cursor: url('img/pointer12.png'), auto;
+transition: 0.3s;
+}
+
+#contato .contatoRight .enviaInformacao:hover {
+transform: scale(1.03);
+transition: 0.3s;
+}
+#contato .contatoRight .enviaInformacao:active {
+transform: scale(1.06);
+transition: 0.3s;
+}
+
+/*--------------------------------------------------------Contato-------------------------------------------------*/
+
+/*----------------------------------------------Contatos----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------Responsividade----------------------------------------*/
+@media (min-width: 750px) and (max-width: 850px){
+    a{
+        text-decoration: none !important;
+        font-size: 1.4em;
+        font-weight: 600;
+        color: white !important;
+        margin: 0vh 2vw;
+        transition: 0.2s;
+        white-space: nowrap;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    a:hover{
+        transition: 0.2s;
+        transform: scale(1.04);
+        color: #4f9ddd !important;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    .chamativo {
+        padding: 1.5vh 3vw;
+        margin-right: 1vw;
+        border-radius: 16px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 0 10px rgb(0,140,255);
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+    }
+    
+    .chamativo:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 18px rgb(0,140,255);
+        color: white !important;
+        cursor: url('img/pointer12.png'), auto;
+    }
+
+    /*-------------------------------Projetos---------------------------*/
+
+    #projetos{
+        padding: 0vw;
+        padding-left: -10vw;
+        margin-left: -5vw;
+        width: 100%;
+    }
+    
+    
+    #projetos .aparece{
+        opacity: 1 !important;
+    }
+    
+    #projetos .desaparece{
+        display: none !important;
+        opacity: 0 !important;
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 3.2em;
+        margin-left: 10vw;
+    }
+    
+    .tags {
+        display: flex;
+        justify-content: center;
+        margin-left: 10vw;
+    }
+    
+    .tags h3{
+        margin: 0vh 1vw;
+        cursor: url('img/pointer12.png'), auto;
+        transition: 0.3s;
+    }
+    
+    .tags h3:hover{
+        transition: 0.3s;
+        transform: scale(1.05);
+        color: #6bc0f8;
+    }
+    
+    .tagSelecionada{
+        transform: scale(1.05);
+        color: #6bc0f8;
+    }
+    
+    .projetoIndividual{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10vh 0 0 10vh;
+    }
+    
+    .container{
+        width: 30vw;
+        margin-right: 7.5vw;
+    }
+    
+    
+    .container h2{
+        font-size: 1.7em;
+        color: #1863ef !important;
+    }
+    
+    .tagsMenores{
+        color: gray;
+        font-size: 1em;
+        display: flex;
+    }
+    
+    .tagsMenores h4{
+    margin: 0 1vw 0 0;
+    }
+    
+    .container p{
+        margin: 2vh 0vw;
+        width: 80%;
+    }
+    
+    .botoes a{
+        margin: 2vh 2vw 0vh 0vw;
+    }
+    
+    .botoes img{
+        transition: 0.35s;
+        cursor: url('img/pointer12.png'), auto;
+        filter: grayscale();
+        width: 10%;
+        border-radius: 50%;
+    }
+    
+    .botoes img:hover{
+        transition: 0.35s;
+        transform: scale(1.05);
+        filter: grayscale(0);
+    }
+    
+    .botoes a:nth-child(2) img:hover{
+        background-color: rgb(66, 7, 108);
+    }
+    
+    .carousel-item img{
+        margin-top: 3vh;
+        width: 40vw;
+        border-radius: 16px;
+        height: 27vh;
+    }
+    
+    .carousel-indicators{
+        margin-bottom:-4.5vh;
+        width: 23.5vw; /*Ajustando o botão para os lados*/
+        display: flex;
+        justify-content: baseline;
+        z-index: 0 !important;
+    }
+    
+    .carrossel .carousel-indicators button{
+        border-radius: 50%;
+        height: 2vh;
+        width: 2vw;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    .carrossel .carousel-indicators button:hover{
+        background-color: #6bdcf8;
+    }
+    /*----------------------------------------------Projetos----------------------------------------------*/
+    
+    main .alinhamento{
+        text-align: center;
+        margin-top: 12vh;
+        transition: 0.3s;
+        margin-left: 10vw;
+    }
+    
+    main .alinhamento button{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.5em;
+    border: 0px !important;
+    }
+    
+    main .alinhamento:hover{
+        transform: scale(1.005);
+        transition: 0.3s;
+    }
+    
+    .ativoPrevio{
+        display: none;
+    }
+    
+    /*----------------------------------------------Contatos----------------------------------------------*/
+    /*--------------------------------------------------------Contato-------------------------------------------------*/
+    #contato{
+        text-align: center;
+        color: white;
+        margin: 12vh 0vw -10vh 00vw;
+        padding: 0vh 6.5vw;
+    }
+    
+    #contato h2{
+        font-size: 2.2em;
+        font-weight: 600;
+        margin-bottom: -8vh;
+    }
+    
+    #contato .contatoLeft h3, p{
+        text-align: justify !important;
+        margin: 0vh 0vw;
+        width: 100%;
+    }
+    #contato .contatoLeft  p{
+        font-size: 1.2em;
+    }
+    
+    #contato .contatoLeft h3{
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+    
+    .containerContatos{
+        display: flex;
+        justify-content: space-around;
+        height: 35vw;
+        margin: 12vh 0vw 0vh 0vw;
+    }
+    
+    #contato .contatoLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0vh 2vw;
+        width: 45vw;
+    }
+    
+    #contato .contatoLeft .contatoDados{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+    margin: 1vh 0vw;
+    }
+    
+    #contato .contatoLeft .contatoDados p{
+        margin: 0vh -1vw;
+        width: 100%;
+        text-align: justify;
+        font-size: 1.2em !important;
+    }
+    
+    #contato .contatoLeft .contatoDados img{
+    max-width: 3.8vw;
+    filter: grayscale(1);
+    margin-left: -2vw;
+    transition: 0.3;
+    }
+    
+    #contato .contatoLeft .contatoDados img:hover{
+    filter: grayscale(0);
+    transition: 0.3;
+    transform: scale(1.05);
+    cursor: url('img/pointer12.png'), auto;
+    }
+    
+    
+    
+    #contato .contatoRight{
+        padding: 0vh 2vw;
+        width: 45vw;
+        height: 135%;
+    }
+    
+    .contatoRight form {    
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+    };
+    
+    .contatoRight form div{
+        width: 100%;
+        height: 10vh;
+    }
+    .contatoRight form div input{
+        width: 100%;
+        height: 3.5vh;
+        margin-bottom: 3vh;
+        border-radius: 16px;
+        padding-left: 1.5vw;
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+        cursor: url('img/text-editor.png'), auto;
+        border: 0px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    
+    input::placeholder {
+        color: white;
+    }
+    
+    .contatoRight form div:nth-child(3) {
+        height: 12vh;
+        margin-bottom: 3vh;
+        border-radius: 16px;
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+    }
+    
+    #contato .contatoRight form div:nth-child(3) textarea{
+        background: rgba(75, 146, 204, 0);
+        width: 100%;
+        height: 100%;
+        resize: none;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: url('img/text-editor.png'), auto;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 1.5vh;
+        border: 0px;
+        border-radius: 16px;
+    }
+    
+    
+    .contatoRight form div:nth-child(3) textarea::placeholder {
+        color: white;
+    }
+    
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px rgb(75, 131, 204) inset; /* aqui muda sua cor do fundo */
+        -webkit-text-fill-color: #ccc; /* Cor do texto */
+    }
+    
+    
+    
+    
+    #contato .contatoRight .enviaInformacao {
+    color: white !important;
+    text-align: center;
+    cursor: url('img/pointer12.png'), auto;
+    transition: 0.3s;
+    }
+    
+    #contato .contatoRight .enviaInformacao:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    }
+    #contato .contatoRight .enviaInformacao:active {
+    transform: scale(1.06);
+    transition: 0.3s;
+    }
+
+
+}
+/*-----------------------------------------------Responsividade----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------Responsividade----------------------------------------*/
+@media (min-width: 375px) and (max-width: 428px){
+    a{
+        text-decoration: none !important;
+        font-size: 1em;
+        font-weight: 600;
+        color: white !important;
+        margin: 0vh 2vw;
+        transition: 0.2s;
+        white-space: nowrap;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    a:hover{
+        transition: 0.2s;
+        transform: scale(1.04);
+        color: #4f9ddd !important;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    .chamativo {
+        padding: 1.5vh 3vw;
+        margin-right: 1vw;
+        border-radius: 16px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 0 10px rgb(0,140,255);
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+    }
+    
+    .chamativo:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 18px rgb(0,140,255);
+        color: white !important;
+        cursor: url('img/pointer12.png'), auto;
+    }
+
+    /*----------------------------header-----------------------------------0*/
+    body header .imagemtopo{
+        width: 4vw;
+        height: 5vh;
+    }
+    /*----------------------------header-----------------------------------0*/
+
+    /*-------------------------------Projetos---------------------------*/
+
+    #projetos{
+        padding: 0vw;
+        padding-left: 0vw;
+        margin-left: -10vw;
+        width: 100%
+    }
+    
+    
+    #projetos .aparece{
+        opacity: 1 !important;
+    }
+    
+    #projetos .desaparece{
+        display: none !important;
+        opacity: 0 !important;
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 2.2em;
+        margin-left: 17vw;
+    }
+    
+    .tags {
+        display: flex;
+        justify-content: center;
+        margin-left: 17vw;
+    }
+    
+    .tags h3{
+        margin: 0vh 1vw;
+        font-size: 1.2em;
+    }
+    
+    .projetoIndividual{
+        padding: 10vh 0 0 10vh;
+    }
+    
+    .container{
+        width: 30vw;
+        margin-right: 7.5vw;
+        margin-left: -2vw;
+    }
+    
+    
+    .container h2{
+        font-size: 1.2em;
+        color: #1863ef !important;
+    }
+    
+    .tagsMenores{
+        color: gray;
+        font-size: 1em;
+        display: flex;
+    }
+    
+    .tagsMenores h4{
+    margin: 0 1vw 0 0;
+    font-size: 0.75em;
+}
+    
+    .projetoIndividual .container p{
+        margin: 2vh 0vw;
+        width: 140%;
+        font-size: 0.6em;
+    }
+    
+    .botoes a{
+        margin: 2vh 2vw 0vh 0vw;
+        width: 30vw;
+    }
+    
+    .container .botoes img{
+        transition: 0.35s;
+        cursor: url('img/pointer12.png'), auto;
+        filter: grayscale();
+        width: 9vw;
+        border-radius: 50%;
+    }
+    
+    .botoes img:hover{
+        transition: 0.35s;
+        transform: scale(1.05);
+        filter: grayscale(0);
+    }
+    
+    .botoes a:nth-child(2) img:hover{
+        background-color: rgb(66, 7, 108);
+    }
+    
+.carrossel{
+    margin: 0vh 2vw;
+}
+
+    .carousel-item img{
+        margin-top: 3vh;
+        width: 45vw;
+        border-radius: 16px;
+        height: 23vh;
+    }
+    
+    .carousel-indicators{
+        margin-bottom:-7.5vh;
+        width: 23.5vw; /*Ajustando o botão para os lados*/
+        display: flex;
+        justify-content: baseline;
+        z-index: 0 !important;
+        margin-left: 11vw;
+    }
+    
+    .carrossel .carousel-indicators button{
+        border-radius: 50%;
+        height: 4vh;
+        width: 5vw;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    .carrossel .carousel-indicators button:hover{
+        background-color: #6bdcf8;
+    }
+    /*----------------------------------------------Projetos----------------------------------------------*/
+    
+    main .alinhamento{
+        text-align: center;
+        margin-top: 12vh;
+        margin-bottom: -5vh;
+        transition: 0.3s;
+        margin-left: 20vw;
+    }
+    
+    main .alinhamento button{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.5em;
+    border: 0px !important;
+    }
+    
+    main .alinhamento:hover{
+        transform: scale(1.005);
+        transition: 0.3s;
+    }
+    
+    .ativoPrevio{
+        display: none;
+    }
+    
+    /*----------------------------------------------Contatos----------------------------------------------*/
+    /*--------------------------------------------------------Contato-------------------------------------------------*/
+    #contatos #contato{
+        text-align: center;
+        color: white;
+        margin: 0vh 0vw -10vh 00vw;
+        padding: 0vh 6.5vw;
+    }
+    
+    #contatos #contato h2{
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: -8vh;
+    }
+    
+    #contato .containerContatos .contatoLeft h3, p{
+        margin: 0vh 0vw;
+        width: 100%;
+    }
+    #contato .containerContatos  .contatoLeft  p{
+        font-size: 0.7em;
+    }
+    
+     #contato .containerContatos .contatoLeft h3{
+        font-weight: 700;
+        font-size: 1em !important;
+    }
+    
+    .containerContatos{
+        display: flex;
+        justify-content: space-around;
+        height: 35vw;
+        margin: 12vh 0vw 0vh 0vw;
+    }
+    
+    #contato .contatoLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0vh 2vw;
+        width: 45vw;
+    }
+    
+    #contato .contatoLeft .contatoDados{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+    margin: 1vh 0vw;
+    }
+    
+    #contato .contatoLeft .contatoDados p{
+        margin: 0vh -1vw;
+        width: 100%;
+        text-align: justify;
+        font-size: 0.7em !important;
+    }
+    
+    #contato .contatoLeft .contatoDados img{
+    max-width: 3.8vw;
+    filter: grayscale(1);
+    margin-left: -2vw;
+    transition: 0.3;
+    }
+    
+    #contato .contatoLeft .contatoDados img:hover{
+    filter: grayscale(0);
+    transition: 0.3;
+    transform: scale(1.05);
+    cursor: url('img/pointer12.png'), auto;
+    }
+    
+    
+    
+    #contato .contatoRight{
+        padding: 0vh 0vw 0vh 7vw;
+        width: 45vw;
+        height: 185%;
+    }
+    
+    .containerContatos .contatoRight form {    
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+    };
+    
+    .contatoRight form div{
+        width: 100%;
+        height: 10vh;
+    }
+    .contatoRight form div input{
+        width: 100%;
+        height: 4vh;
+        margin-bottom: 1vh;
+        border-radius: 16px;
+        padding-left: 1.5vw;
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+        cursor: url('img/text-editor.png'), auto;
+        border: 0px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    
+    input::placeholder {
+        color: white;
+    }
+    
+    .contatoRight form div:nth-child(3) {
+        height: 18vh;
+        margin-bottom: 1vh;
+        border-radius: 16px;
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+    }
+    
+    #contato .contatoRight form div:nth-child(3) textarea{
+        background: rgba(75, 146, 204, 0);
+        width: 100%;
+        height: 100%;
+        resize: none;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: url('img/text-editor.png'), auto;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 1.5vh;
+        border: 0px;
+        border-radius: 16px;
+    }
+    
+    
+    .contatoRight form div:nth-child(3) textarea::placeholder {
+        color: white;
+    }
+    
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px rgb(75, 131, 204) inset; /* aqui muda sua cor do fundo */
+        -webkit-text-fill-color: #ccc; /* Cor do texto */
+    }
+    
+    
+    
+    
+    #contato .contatoRight .enviaInformacao {
+    color: white !important;
+    text-align: center;
+    cursor: url('img/pointer12.png'), auto;
+    transition: 0.3s;
+    }
+    
+    #contato .contatoRight .enviaInformacao:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    }
+    #contato .contatoRight .enviaInformacao:active {
+    transform: scale(1.06);
+    transition: 0.3s;
+    }
+
+    #espacamento{
+        margin-bottom: 5vh;
+    }
+}
+/*-----------------------------------------------Responsividade----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------Responsividade----------------------------------------*/
+@media (max-width: 370px) {
+    a{
+        text-decoration: none !important;
+        font-size: 1em;
+        font-weight: 600;
+        color: white !important;
+        margin: 0vh 2vw;
+        transition: 0.2s;
+        white-space: nowrap;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    a:hover{
+        transition: 0.2s;
+        transform: scale(1.04);
+        color: #4f9ddd !important;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    .chamativo {
+        padding: 1.5vh 3vw;
+        margin-right: 1vw;
+        border-radius: 16px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 0 10px rgb(0,140,255);
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+    }
+    
+    .chamativo:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 18px rgb(0,140,255);
+        color: white !important;
+        cursor: url('img/pointer12.png'), auto;
+    }
+
+    /*----------------------------header-----------------------------------0*/
+    body header .imagemtopo{
+        width: 4vw;
+        height: 5vh;
+    }
+    /*----------------------------header-----------------------------------0*/
+
+    /*-------------------------------Projetos---------------------------*/
+
+    #projetos{
+        padding: 0vw;
+        padding-left: 0vw;
+        margin-left: -10vw;
+        width: 100%
+    }
+    
+    
+    #projetos .aparece{
+        opacity: 1 !important;
+    }
+    
+    #projetos .desaparece{
+        display: none !important;
+        opacity: 0 !important;
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 1.8em;
+        margin-left: 17vw;
+    }
+    
+    .tags {
+        display: flex;
+        justify-content: center;
+        margin-left: 17vw;
+    }
+    
+    .tags h3{
+        margin: 0vh 1vw;
+        font-size: 0.7em;
+    }
+    
+    .projetoIndividual{
+        padding: 10vh 0 0 10vh;
+    }
+    
+    .container{
+        width: 30vw;
+        margin-right: 7.5vw;
+        margin-left: -2vw;
+    }
+    
+    
+    .container h2{
+        font-size: 1.2em;
+        color: #1863ef !important;
+    }
+    
+    .tagsMenores{
+        color: gray;
+        font-size: 1em;
+        display: flex;
+    }
+    
+    .tagsMenores h4{
+    margin: 0 1vw 0 0;
+    font-size: 0.75em;
+}
+    
+    .projetoIndividual .container p{
+        margin: 2vh 0vw;
+        width: 140%;
+        font-size: 0.6em;
+    }
+    
+    .botoes a{
+        margin: 2vh 2vw 0vh 0vw;
+        width: 30vw;
+    }
+    
+    .container .botoes img{
+        transition: 0.35s;
+        cursor: url('img/pointer12.png'), auto;
+        filter: grayscale();
+        width: 9vw;
+        border-radius: 50%;
+    }
+    
+    .botoes img:hover{
+        transition: 0.35s;
+        transform: scale(1.05);
+        filter: grayscale(0);
+    }
+    
+    .botoes a:nth-child(2) img:hover{
+        background-color: rgb(66, 7, 108);
+    }
+    
+.carrossel{
+    margin: 0vh 2vw;
+}
+
+    .carousel-item img{
+        margin-top: 3vh;
+        width: 45vw;
+        border-radius: 16px;
+        height: 23vh;
+    }
+    
+    .carousel-indicators{
+        margin-bottom:-7.5vh;
+        width: 23.5vw; /*Ajustando o botão para os lados*/
+        display: flex;
+        justify-content: baseline;
+        z-index: 0 !important;
+        margin-left: 11vw;
+    }
+    
+    .carrossel .carousel-indicators button{
+        border-radius: 50%;
+        height: 4vh;
+        width: 5vw;
+        cursor: url('img/pointer12.png'), auto;
+    }
+    
+    .carrossel .carousel-indicators button:hover{
+        background-color: #6bdcf8;
+    }
+    /*----------------------------------------------Projetos----------------------------------------------*/
+    
+    main .alinhamento{
+        text-align: center;
+        margin-top: 12vh;
+        margin-bottom: -5vh;
+        transition: 0.3s;
+        margin-left: 20vw;
+    }
+    
+    main .alinhamento button{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.5em;
+    border: 0px !important;
+    }
+    
+    main .alinhamento:hover{
+        transform: scale(1.005);
+        transition: 0.3s;
+    }
+    
+    .ativoPrevio{
+        display: none;
+    }
+    
+    /*----------------------------------------------Contatos----------------------------------------------*/
+    /*--------------------------------------------------------Contato-------------------------------------------------*/
+    #contatos #contato{
+        text-align: center;
+        color: white;
+        margin: 0vh 0vw -10vh 00vw;
+        padding: 0vh 6.5vw;
+    }
+    
+    #contatos #contato h2{
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: -8vh;
+    }
+    
+    #contato .containerContatos .contatoLeft h3, p{
+        margin: 0vh 0vw;
+        width: 100%;
+    }
+    #contato .containerContatos  .contatoLeft  p{
+        font-size: 0.7em;
+    }
+    
+     #contato .containerContatos .contatoLeft h3{
+        font-weight: 700;
+        font-size: 1em !important;
+    }
+    
+    .containerContatos{
+        display: flex;
+        justify-content: space-around;
+        height: 35vw;
+        margin: 12vh 0vw 0vh 0vw;
+    }
+    
+    #contato .contatoLeft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0vh 2vw;
+        width: 45vw;
+    }
+    
+    #contato .contatoLeft .contatoDados{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+    margin: 1vh 0vw;
+    }
+    
+    #contato .contatoLeft .contatoDados p{
+        margin: 0vh -1vw;
+        width: 100%;
+        text-align: justify;
+        font-size: 0.7em !important;
+    }
+    
+    #contato .contatoLeft .contatoDados img{
+    max-width: 3.8vw;
+    filter: grayscale(1);
+    margin-left: -2vw;
+    transition: 0.3;
+    }
+    
+    #contato .contatoLeft .contatoDados img:hover{
+    filter: grayscale(0);
+    transition: 0.3;
+    transform: scale(1.05);
+    cursor: url('img/pointer12.png'), auto;
+    }
+    
+    
+    
+    #contato .contatoRight{
+        padding: 0vh 0vw 0vh 7vw;
+        width: 45vw;
+        height: 185%;
+    }
+    
+    .containerContatos .contatoRight form {    
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+    };
+    
+    .contatoRight form div{
+        width: 100%;
+        height: 10vh;
+    }
+    .contatoRight form div input{
+        width: 100%;
+        height: 4vh;
+        margin-bottom: 1vh;
+        border-radius: 16px;
+        padding-left: 1.5vw;
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+        cursor: url('img/text-editor.png'), auto;
+        border: 0px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    
+    input::placeholder {
+        color: white;
+    }
+    
+    .contatoRight form div:nth-child(3) {
+        height: 18vh;
+        margin-bottom: 1vh;
+        border-radius: 16px;
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        color: white;
+    }
+    
+    #contato .contatoRight form div:nth-child(3) textarea{
+        background: rgba(75, 146, 204, 0);
+        width: 100%;
+        height: 100%;
+        resize: none;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: url('img/text-editor.png'), auto;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-top: 1.5vh;
+        border: 0px;
+        border-radius: 16px;
+    }
+    
+    
+    .contatoRight form div:nth-child(3) textarea::placeholder {
+        color: white;
+    }
+    
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px rgb(75, 131, 204) inset; /* aqui muda sua cor do fundo */
+        -webkit-text-fill-color: #ccc; /* Cor do texto */
+    }
+    
+    
+    
+    
+    #contato .contatoRight .enviaInformacao {
+    color: white !important;
+    text-align: center;
+    cursor: url('img/pointer12.png'), auto;
+    transition: 0.3s;
+    }
+    
+    #contato .contatoRight .enviaInformacao:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    }
+    #contato .contatoRight .enviaInformacao:active {
+    transform: scale(1.06);
+    transition: 0.3s;
+    }
+
+    #espacamento{
+        margin-bottom: 5vh;
+    }
+}
+/*-----------------------------------------------Responsividade----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------Responsividade----------------------------------------*/
+@media (min-height: 780px) and (max-height: 820px){
+/*--------------------------------------------------------Contato-------------------------------------------------*/
+#contato{
+    text-align: center;
+    color: white;
+    margin: 20vh 0vw -10vh 00vw;
+    padding: 0vh 6.5vw;
+}
+
+#contato h2{
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: -8vh;
+}
+
+#contato .contatoLeft h3, p{
+    text-align: justify !important;
+    margin: 0vh 0vw;
+    width: 100%;
+}
+#contato .containerContatos .contatoLeft  p{
+    font-size: 1.1em;
+}
+
+#contato .containerContatos .contatoLeft h3{
+    font-weight: 700;
+    font-size:1.8em;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.containerContatos{
+    display: flex;
+    justify-content: space-around;
+    height: 35vw;
+    margin: 12vh 0vw 0vh 0vw;
+}
+
+#contato .contatoLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0vh 2vw;
+    width: 45vw;
+}
+
+#contato .contatoLeft .contatoDados{
+display: flex;
+align-items: center;
+justify-content: baseline;
+width: 100%;
+margin: 1vh 0vw;
+}
+
+#contato .contatoLeft .contatoDados p{
+    margin: 0vh -1vw;
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2em !important;
+}
+
+#contato .contatoLeft .contatoDados img{
+max-width: 3.8vw;
+filter: grayscale(1);
+margin-left: -2vw;
+transition: 0.3;
+}
+
+#contato .contatoLeft .contatoDados img:hover{
+filter: grayscale(0);
+transition: 0.3;
+transform: scale(1.05);
+cursor: url('img/pointer12.png'), auto;
+}
+
+
+
+#contato .contatoRight{
+    padding: 0vh 2vw;
+    width: 45vw;
+    height: 100%;
+}
+
+.contatoRight form {    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+};
+
+.contatoRight form div{
+    width: 100%;
+    height: 10vh;
+}
+.contatoRight form div input{
+    width: 100%;
+    height: 6.5vh;
+    margin-bottom: 3vh;
+    border-radius: 16px;
+    padding-left: 1.5vw;
+    background: rgb(75,147,204);
+    background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+    color: white;
+    cursor: url('img/text-editor.png'), auto;
+    border: 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+input::placeholder {
+    color: white;
+}
+
+.contatoRight form div:nth-child(3) {
+    height: 25vh;
+    margin-bottom: 3vh;
+    border-radius: 16px;
+    background: rgb(75,147,204);
+    background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+    color: white;
+}
+
+#contato .contatoRight form div:nth-child(3) textarea{
+    background: rgba(75, 146, 204, 0);
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: url('img/text-editor.png'), auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1.5vh;
+    border: 0px;
+    border-radius: 16px;
+}
+
+
+.contatoRight form div:nth-child(3) textarea::placeholder {
+    color: white;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px rgb(75, 131, 204) inset; /* aqui muda sua cor do fundo */
+    -webkit-text-fill-color: #ccc; /* Cor do texto */
+}
+
+
+
+
+#contato .contatoRight .enviaInformacao {
+color: white !important;
+text-align: center;
+cursor: url('img/pointer12.png'), auto;
+transition: 0.3s;
+}
+
+#contato .contatoRight .enviaInformacao:hover {
+transform: scale(1.03);
+transition: 0.3s;
+}
+#contato .contatoRight .enviaInformacao:active {
+transform: scale(1.06);
+transition: 0.3s;
+}
+}
+/*-----------------------------------------------Responsividade----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
