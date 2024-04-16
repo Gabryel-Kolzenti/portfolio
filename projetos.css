@@ -39,6 +39,10 @@ a:hover{
     cursor: url('img/pointer12.png'), auto;
 }
 
+a:active{
+    transform: scale(1.06);
+}
+
 .chamativo {
     padding: 1.5vh 3vw;
     margin-right: 1vw;
@@ -55,6 +59,10 @@ a:hover{
     box-shadow: 0 0 18px rgb(0,140,255);
     color: white !important;
     cursor: url('img/pointer12.png'), auto;
+}
+
+.chamativo:active{
+    transform: scale(1.06);
 }
 
 
@@ -92,6 +100,14 @@ header .alignHeader{
 
 
 #projetos .aparece{
+    opacity: 1 !important;
+    animation-name: aparece;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+#projetos .apareceAll{
     opacity: 1 !important;
 }
 
@@ -406,6 +422,18 @@ transition: 0.3s;
 
 /*----------------------------------------------Contatos----------------------------------------------*/
 
+/*---------------------------------------------------Animação-----------------------------------------------------------------*/
+@keyframes aparece{
+    to {
+        filter: blur(1.3px);
+        transform: translateY(6vh); /*Para mexer apenas no eixo "X"*/
+    }
+    from {
+        filter: blur(0);
+        transform: translateY(0vh);
+    }
+}
+/*---------------------------------------------------Animação-----------------------------------------------------------------*/
 
 
 
@@ -471,9 +499,6 @@ transition: 0.3s;
     }
     
     
-    #projetos .aparece{
-        opacity: 1 !important;
-    }
     
     #projetos .desaparece{
         display: none !important;

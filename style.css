@@ -37,6 +37,10 @@ a:hover{
     cursor: url('img/pointer12.png'), auto;
 }
 
+a:active{
+    transform: scale(1.06);
+}
+
 .chamativo {
     padding: 1.5vh 3vw;
     margin-right: 1vw;
@@ -55,12 +59,22 @@ a:hover{
     cursor: url('img/pointer12.png'), auto;
 }
 
+.chamativo:active{
+    transform: scale(1.06);
+}
+
 #projetos .aparece{
     display: block !important;
 }
 
 #projetos .desaparece{
     display: none !important;
+}
+
+body .enabled {
+    position: absolute;
+    left: 0;
+    margin-top: 10vh;
 }
 
 /*-------------------------------------------------Header---------------------------------------*/
@@ -93,6 +107,7 @@ header .alignHeader{
     display: none;
   }
 
+
 .dropdown button {
     background: rgb(75,147,204);
     background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
@@ -102,6 +117,12 @@ header .alignHeader{
 .dropdown ul{
     background-color: rgb(0, 119, 255);
     width: 100%;
+    transition: 0.3s;
+}
+
+.dropdown button:active{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
   .dropdown-menu li a{
@@ -290,7 +311,7 @@ article{
 .containerHabilidades{
     display: grid;
     width: 45vw; 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -327,6 +348,7 @@ article{
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     padding: 0vh 12vw;
+    margin-bottom: 4vh;
 }
 
 #projetos .containerProjetos .card{
@@ -367,6 +389,9 @@ border-radius: 16px !important;
 .containerProjetos .card .card-body p{
     line-height: 1.4; 
     word-spacing: -1.25px;
+    overflow-y: hidden;
+    height: 12vh;
+    max-height: 12vh !important;
 }
 
 #projetos .containerProjetos .card a{
@@ -384,7 +409,7 @@ border-radius: 16px !important;
     cursor: url('img/pointer12.png'), auto;
 }
 
-#projetos a{
+#projetos #maisProjetos div a{
     margin-top: 5vh;
 }
 
@@ -593,7 +618,7 @@ footer{
     to {
         transform: translateX(0vw) ; /*Para evitar que o objeto encoste no final da página, devemos subtrair o tamanho dele do total da tela*/
     }
-}
+}       
 
 
 @keyframes animaCima {
@@ -786,7 +811,7 @@ footer{
     .containerHabilidades{
         display: grid;
         width: 45vw; 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin-left: -24vw;
     }
     
@@ -848,9 +873,6 @@ footer{
     };
     #projetos .containerProjetos .card .card-body .card-text {
         font-size: 0.2em !important;
-    };
-    .containerProjetos .card p{
-        font-size: 0.2em
     };
     .containerProjetos .card p{
         font-size: 0.2em
@@ -1135,7 +1157,7 @@ footer{
             width: 76vw;
             height: 45vh;
             border-radius: 16px;
-            margin: 5vh 5vw;
+            margin: 5vh 5vw -5vh 5vw;
             box-shadow: 5px 5px 5px 0px rgb(11, 11, 182);
             border: 3.5px solid rgb(25, 69, 189);
         }
@@ -1165,6 +1187,10 @@ footer{
         }
     /*------------------------------------Habilidades-----------------------------------------*/
 
+    #habilidades{
+        margin-top: -20vh
+    }
+
     #habilidades h2{
         font-size: 1.8em;
         color: white;
@@ -1173,21 +1199,26 @@ footer{
     .containerHabilidades{
         display: grid;
         width: 45vw; 
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: -24vw;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: -28vw;
     }
     
     
     .containerHabilidades div img{
-        width: 15vw;
-        height: 9vh;
+        width: 8.5vw;
+        height: 5vh;
         margin: 4vh 4vw 1vh 4vw;
     }
     
     .containerHabilidades div p{
-        font-size: 0.63em;
+        font-size: 0.7em;
         color: white;
+        margin-left: -4vw;
         text-align: center !important;
+    }
+    .containerHabilidades div:nth-child(5) p{
+        margin-left: 0vw;
+        width: 90%;
     }
     /*------------------------------------Projetos-----------------------------------------*/
 
@@ -1214,7 +1245,9 @@ footer{
 
     #projetos .containerProjetos .card {
         height: 65vh;
-        margin-bottom: 10vh
+        width: 80vw;
+        margin-left: 4vw;
+        margin-bottom: 10vh;
     }
     #projetos .containerProjetos .card img{
         height: 29vh;
@@ -1233,22 +1266,21 @@ footer{
     .containerProjetos .card h5{
         font-size: 1.2em
     };
-    #projetos .containerProjetos .card .card-body .card-text {
-        font-size: 0.2em !important;
-    };
-    .containerProjetos .card p{
-        font-size: 0.2em
-    };
-    .containerProjetos .card p{
-        font-size: 0.2em
-    };
+
+    #projetos .containerProjetos .card-body{
+        width: 10vw;
+    }
 
     #projetos #maisProjetos a{
         margin-bottom: 10vh;
         margin-top: -10vh;
-        padding: 10vh 2vw !important;
-        font-size: 2rem;
+        padding: 2vh 2vw !important;
+        font-size: 1.1rem;
     }
+        .containerProjetos .card .card-body p{
+            font-size: 1em !important;
+            max-width: 70vw;
+        }
     
     /*------------------------------------Contatos-----------------------------------------*/
     #contato{
@@ -1551,7 +1583,7 @@ footer{
     .containerHabilidades{
         display: grid;
         width: 45vw; 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin-left: -20vw;
     }
     
@@ -1795,9 +1827,13 @@ footer{
     header img{
         max-width: 6.5%;
     }
-
     .dropdown {
         display: block;
+        width: 32vw;
+      }
+
+      .dropdown .btn{
+        font-size: 1.6em;
       }
           
     header .alignHeader a{
@@ -1826,11 +1862,11 @@ footer{
     margin-top: -10vh;
     }
     .Main h2{
-        font-size: 3em;
+        font-size: 4em;
     }
     
     .Main h1{
-        font-size: 2em;
+        font-size: 2.5em;
         margin-bottom: 5vh;
     }
     
@@ -1844,7 +1880,7 @@ footer{
     .Main a img{
         width: 12vw;
         height: 8vh;
-        padding: 5px;
+        padding: 12px;
     }
     /*------------------------------------Sobre Mim-----------------------------------------*/
     
@@ -1857,7 +1893,7 @@ footer{
     
     #sobreMim img{
         width: 78vw;
-        height: 42vh;
+        height: 52vh;
         margin: 5vh 5vw;
     }
     
@@ -1877,8 +1913,9 @@ footer{
     }
     
     #sobreMim div a{
-        padding: 1vh 2vw;
-        margin-top: 1vh
+        padding: 1.5vh 3vw;
+        margin-top: 1vh;
+        font-size: 1.6em;
     }
     /*------------------------------------Habilidades-----------------------------------------*/
 
@@ -1890,13 +1927,13 @@ footer{
     .containerHabilidades{
         display: grid;
         width: 45vw; 
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: -20vw;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: -25vw;
     }
     
     
     .containerHabilidades div img{
-        width: 15vw;
+        width: 12vw;
         height: 9vh;
         margin: 4vh 3vw 1vh 3vw;
     }
@@ -1930,41 +1967,39 @@ footer{
     }
 
     #projetos .containerProjetos .card {
-        height: 45vh;
-        width: 40vw;
+        height: 56vh;
+        width: 50vw;
         margin-bottom: 10vh
     }
-    .containerProjetos .card img{
-        height: 40%
+    #projetos h2{
+        font-size: 2.8em;
+        white-space: nowrap;
+    }
+
+    #projetos p{
+        font-size: 1.2em;
+    }
+    #projetos .containerProjetos .card img{
+        height: 32vh;
+        width: 100%;
     }
     .containerProjetos .card .habilidadesProjetos h4{
-        font-size: 0.8em;
-        background-color: #221C5D;
-        text-align: center;
-        align-self: center;
-        border-radius: 10px;
+        font-size: 1.2em;
         max-width: 50.5vw;
         padding: 1vh 1.5vw;
         margin: 0.5vh 1vw 1.5vh 0vw;
     }
     .containerProjetos .card h5{
-        font-size: 1.6em
-    };
-    #projetos .containerProjetos .card .card-body .card-text {
-        font-size: 0.4em !important;
-    };
-    .containerProjetos .card p{
-        font-size: 0.6em
-    };
-    .containerProjetos .card p{
-        font-size: 0.8em
+        font-size: 1.7em
     };
 
-    body section #projetos a{
-        margin-bottom: 10vh;
-        margin-top: -10vh;
-        padding: 2vh 2vw;
-        font-size: 2rem;
+    #projetos .containerProjetos .card .card-body .btn-primary{
+        background: rgb(75,147,204);
+        background: linear-gradient(90deg, rgba(75,147,204,1) 0%, rgba(70,41,184,1) 90%);
+        border: none;
+        margin: 10vh !important;
+        border-radius: 12px;
+        box-shadow: 0px 0px 2px rgb(0,140,255);
     }
     
     /*------------------------------------Contatos-----------------------------------------*/
@@ -1983,15 +2018,15 @@ footer{
         width: 100%;
     }
     #contato .contatoLeft  p{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     
     #contato .contatoLeft h3{
-        font-size: 0.9em;
+        font-size: 1.15em;
     }
     
     .containerContatos{
-        height: 35vw;
+        height: 34vw;
         margin: 12vh 0vw 0vh 0vw;
     }
     
@@ -2008,12 +2043,13 @@ footer{
     #contato .contatoLeft .contatoDados p{
         margin: 0vh 0vw;
         width: 100%;
-        font-size: 0.6em !important;
+        font-size: 1em !important;
     }
     
     #contato .contatoLeft .contatoDados img{
     max-width: 5.8vw;
     margin-left: -2vw;
+    filter: grayscale(0);
     }
     
     #contato .contatoLeft .contatoDados img:hover{
