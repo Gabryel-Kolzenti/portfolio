@@ -259,7 +259,7 @@ article{
 #sobreMim{
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
-    padding: 12vh 3.5vw;
+    padding: 0vh 1.5vw;
 }
 
 #sobreMim img{
@@ -275,7 +275,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin: 10vh 5vw;
+    margin: 0vh 5vw;
 }
 
 #sobreMim h2{
@@ -291,6 +291,7 @@ article{
 
 #sobreMim div a{
     padding: 2vh 1.5vw;
+    margin-top: 3%;
 }
 /*------------------------------------------------Sobre Mim-----------------------------------------*/
 /*--------------------------------------------------------Habilidades-------------------------------------------*/
@@ -311,7 +312,18 @@ article{
 .containerHabilidades{
     display: grid;
     width: 45vw; 
-    grid-template-columns: repeat(4, 1fr);
+}
+
+.seteItens{
+    grid-template-columns: repeat(7, 1fr); 
+}
+
+.seisItens{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cincoItens{
+    grid-template-columns: repeat(5, 1fr);
 }
 
 
@@ -353,7 +365,7 @@ article{
 
 #projetos .containerProjetos .card{
 border: 2px solid #0c2061;
-width: 16.6rem;
+width: 18.6rem;
 margin: 3vh 2vw;
 border-radius: 16px !important;
 }
@@ -367,31 +379,35 @@ border-radius: 16px !important;
 #projetos .containerProjetos .card .card-body{
     background-color: #10193c;
     color: white;
+    display: grid;
+    grid-template-columns: repeat(1,4fr);
     border-radius: 0px 0px 12px 12px
 }
 
 .containerProjetos .card .habilidadesProjetos {
-    display: flex;
-    justify-content: baseline;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
 }
 
 .containerProjetos .card .habilidadesProjetos h4{
-    font-size: 0.8em;
+    font-size: 0.65em;
     background-color: #221C5D;
     text-align: center;
     align-self: center;
     border-radius: 10px;
-    max-width: 6.5vw;
+    max-width: 100%;
     padding: 0.5vh 0.5vw;
-    margin: 0.5vh 0.5vw 1.5vh 0vw;
+    margin: 0.5vh 0.3vw 0.1vh 0vw;
+}
+
+.card-body h5{
+    margin-top: 5%;
 }
 
 .containerProjetos .card .card-body p{
-    line-height: 1.4; 
-    word-spacing: -1.25px;
     overflow-y: hidden;
     height: 12vh;
-    max-height: 12vh !important;
 }
 
 #projetos .containerProjetos .card a{
@@ -401,6 +417,7 @@ border-radius: 16px !important;
     margin: 0;
     border-radius: 12px;
     box-shadow: 0px 0px 2px rgb(0,140,255);
+    width: 100%;
 }
 
 #projetos .containerProjetos .card a:hover{

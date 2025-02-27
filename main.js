@@ -12,7 +12,7 @@ function Geral(params) {
     
 
     var div = document.querySelector('.textAnimation');
-    var textos = ['FullStack', 'Front-End', 'Back-End', 'de Software'];
+    var textos = ['FullStack', 'Analista de dados'];
     
     function escrever(str, done) {
         var index = 0;

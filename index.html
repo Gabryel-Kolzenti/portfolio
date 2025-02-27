@@ -2,7 +2,10 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -20,29 +23,8 @@
       />
       <div class="alignHeader" id="reponsive">
         <a href="#home">Home</a>
-        <a href="#sobreMim">Sobre Mim</a>
-        <div>
-          <a href="#habilidades">Habilidades</a>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Mais opções
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#home">Home</a></li>
-              <li><a class="dropdown-item" href="#sobreMim">Sobre Mim</a></li>
-              <li>
-                <a class="dropdown-item" href="#habilidades">Habilidades</a>
-              </li>
-              <li><a class="dropdown-item" href="#projetos">Projetos</a></li>
-              <li><a class="dropdown-item" href="#contatos">Contato</a></li>
-            </ul>
-          </div>
-        </div>
+        <a href="#Scroll">Sobre Mim</a>
+        <a href="#habilidades">Habilidades</a>
         <a href="#projetos">Projetos</a>
         <a href="#contatos" class="chamativo">Contato</a>
       </div>
@@ -57,22 +39,35 @@
           <h1 class="textAnimation"></h1>
           <h1><span>|</span></h1>
         </div>
-        <a href="#sobreMim">
+        <a href="#Scroll">
           <img id="botaoSeta" src="img/seta-direita.png" alt=""
         /></a>
       </div>
     </main>
 
-    <section>
+    <section id="Scroll">
       <article id="sobreMim">
         <img src="img/sobreMim.jpg" alt="" />
         <div>
           <h2>Sobre Mim</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            ducimus sequi cum velit illo. Laboriosam tempore blanditiis hic nemo
-            sapiente cupiditate voluptate vero voluptates doloribus, eos
-            inventore eius accusamus corporis?
+            Sou um desenvolvedor Full Stack com experiência em PHP, Python,
+            JavaScript (ES6+), TypeScript, MySQL, React, Bootstrap, CSS3 e
+            HTML5. Tenho atuado no desenvolvimento de soluções inovadoras, como
+            um marketplace para microempreendedores e uma plataforma para adoção
+            de animais, aplicando boas práticas de orientação a objetos e
+            metodologias ágeis (Scrum). Além do desenvolvimento web, também
+            possuo experiência em análise de dados, utilizando Python, Pandas,
+            Matplotlib, Plotly e Scikit-learn para explorar e visualizar
+            informações relevantes. Fui um dos vencedores locais do NASA Space
+            Apps Challenge 2024, onde desenvolvi um site interativo para mapear
+            os impactos das enchentes no Rio Grande do Sul, e também vencedor do
+            programa INSPIRE do Sebrae, criando uma startup do zero, passando
+            por todas as etapas de modelagem de negócios e prototipagem de um
+            MVP. Estou em constante aprendizado e atualmente aprimoro meus
+            conhecimentos em React e TypeScript, buscando unir desenvolvimento
+            web e análise de dados para criar soluções inteligentes e
+            impactantes.
           </p>
           <a href="#habilidades" class="chamativo">Minhas Habilidades</a>
         </div>
@@ -80,7 +75,37 @@
 
       <article id="habilidades">
         <h2>Habilidades</h2>
-        <div class="containerHabilidades">
+        <div class="containerHabilidades seteItens">
+          <div>
+            <img src="img/python.png" alt="" />
+            <p>Python</p>
+          </div>
+          <div>
+            <img src="img/pandas.png" alt="" />
+            <p>Pandas</p>
+          </div>
+          <div>
+            <img src="img/Matplotlib.png" alt="" />
+            <p>Matplotlib</p>
+          </div>
+          <div>
+            <img src="img/scikit-learn.png" alt="" />
+            <p>Scikit-Learn</p>
+          </div>
+          <div>
+            <img src="img/NumPy.png" alt="" />
+            <p>NumPy</p>
+          </div>
+          <div>
+            <img src="img/Jupyter.png" alt="" />
+            <p>Jupyter</p>
+          </div>
+          <div>
+            <img src="img/Ploty.png" alt="" />
+            <p>Plotly</p>
+          </div>
+        </div>
+        <div class="containerHabilidades seisItens">
           <div>
             <img src="img/html.png" alt="" />
             <p>HTML 5</p>
@@ -98,22 +123,35 @@
             <p>Bootstrap</p>
           </div>
           <div>
-            <img src="img/smartphone.png" alt="" />
-            <p>Responsividade</p>
-          </div>
-          <div>
-            <img src="img/logic.png" alt="" />
-            <p>Lógica de programação</p>
-          </div>
-          <div>
             <img src="img/php.png" alt="" />
             <p>PHP</p>
           </div>
           <div>
-            <img src="img/sql.png" alt="" />
-            <p>SQL</p>
+            <img src="img/mysql.png" alt="" />
+            <p>MySQL</p>
           </div>
-  
+        </div>
+        <div class="containerHabilidades cincoItens">
+          <div>
+            <img src="img/bater-papo.png" alt="" />
+            <p>Comunicação</p>
+          </div>
+          <div>
+            <img src="img/unidos.png" alt="" />
+            <p>Trabalho em Equipe</p>
+          </div>
+          <div>
+            <img src="img/lendo.png" alt="" />
+            <p>Aprendizado Contínuo</p>
+          </div>
+          <div>
+            <img src="img/adaptacao.png" alt="" />
+            <p>Adaptabilidade</p>
+          </div>
+          <div>
+            <img src="img/proativo.png" alt="" />
+            <p>Proatividade</p>
+          </div>
         </div>
       </article>
 
@@ -122,42 +160,23 @@
         <div class="containerProjetos">
           <div class="card">
             <img
-              src="img/Projetos/Capturar.PNG"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <div class="habilidadesProjetos">
-                <h4>HTML/CSS</h4>
-                <h4>JavaScript</h4>
-                <h4>Responsivo</h4>
-              </div>
-              <h5 class="card-title">Calculadora</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a
-                href="https://gabryel-kolzenti.github.io/calculadora/"
-                class="btn btn-primary"
-                >Vá para o site</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <img
               src="img/Projetos/cafeteria1.PNG"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
               <div class="habilidadesProjetos">
-                <h4>HTML/CSS</h4>
+                <h4>PHP</h4>
+                <h4>React</h4>
+                <h4>Javascript</h4>
+                <h4>Figma</h4>
+                <h4>Bootstrap</h4>
+                <h4>MySQL</h4>
               </div>
-              <h5 class="card-title">Cafeteria</h5>
+              <h5 class="card-title">Juntas Por Eles</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Site em desenvolvimento para promover a adoção de animais e
+                facilitar doações para a ONG Juntas Por Eles.
               </p>
               <a
                 href="https://gabryel-kolzenti.github.io/cafeteria/"
@@ -167,15 +186,54 @@
             </div>
           </div>
           <div class="card">
-            <img src="img/Projetos/cel1.PNG" class="card-img-top" alt="..." />
+            <img
+              src="img/Projetos/dacatare_dataset.png"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <div class="habilidadesProjetos">
-                <h4>HTML/CSS</h4>
+                <h4>Python</h4>
+                <h4>Pandas</h4>
+                <h4>Scikit-Learn</h4>
+                <h4>Jupyter</h4>
+                <h4>NumPy</h4>
+                <h4>GitFlow</h4>
               </div>
-              <h5 class="card-title">Loja de celulares</h5>
+              <h5 class="card-title">DataCare</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Mapear a relação entre rotina diária, hábitos de vida e fatores
+                demográficos com o estado emocional dos indivíduos, buscando
+                compreender como aspectos como vida acadêmica e profissional,
+                alimentação, idade, gênero e qualidade do sono influenciam o
+                desenvolvimento ou agravamento da depressão.
+              </p>
+              <a
+                href="https://github.com/AndreiHammes/gc24-DataCare"
+                class="btn btn-primary"
+                >Vá para o Repositório</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img/Projetos/capa_mercazon.PNG"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="habilidadesProjetos">
+                <h4>Responsivo</h4>
+                <h4>PHP</h4>
+                <h4>MySQL</h4>
+                <h4>Bootstrap</h4>
+                <h4>JavaScript</h4>
+                <h4>Git</h4>
+              </div>
+              <h5 class="card-title">Mercazon (Marketplace)</h5>
+              <p class="card-text">
+                Marketplace exclusivo para microempreendedores com o intuito de
+                fomentar o comércio local de maneira justa.
               </p>
               <a
                 href="https://gabryel-kolzenti.github.io/Sell-Phones/"
@@ -228,7 +286,7 @@
           </div>
           <div class="card">
             <img
-              src="img/Projetos/verificaIdade2.PNG"
+              src="img/Projetos/Capturar.PNG"
               class="card-img-top"
               alt="..."
             />
@@ -236,14 +294,15 @@
               <div class="habilidadesProjetos">
                 <h4>HTML/CSS</h4>
                 <h4>JavaScript</h4>
+                <h4>Responsivo</h4>
               </div>
-              <h5 class="card-title">Verificador de Idade</h5>
+              <h5 class="card-title">Calculadora</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
               <a
-                href="https://gabryel-kolzenti.github.io/VerificadorIdade/"
+                href="https://gabryel-kolzenti.github.io/calculadora/"
                 class="btn btn-primary"
                 >Vá para o site</a
               >
@@ -251,7 +310,9 @@
           </div>
         </div>
 
-        <div id="maisProjetos"><a href="projetos.html" class="chamativo" >Mais Projetos</a></div>
+        <div id="maisProjetos">
+          <a href="projetos.html" class="chamativo">Mais Projetos</a>
+        </div>
       </article>
 
       <div id="contatos"></div>
@@ -261,25 +322,33 @@
           <div class="contatoLeft">
             <h3>Vamos Trabalhar Juntos?</h3>
             <p>
-              oluptatem labore in officiis veritatis itaque delectus tempore ex,
-              distinctio quis, recusandae natus molestias!
+              Se ficou interessado ou tem alguma dúvida sobre minha trajetória ou projetos, entre em contato através das opções abaixo. Vou adorar conversar sobre!
             </p>
             <div class="contatoDados">
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlFCjWnZTrnfZdpwqdTMhzfGzSQSfbTfKLgvHWcNzmjMjtvzQTVTWXQRbkqllPfSfDlMWg"><img src="img/gmail (1).png" alt="" /></a>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlFCjWnZTrnfZdpwqdTMhzfGzSQSfbTfKLgvHWcNzmjMjtvzQTVTWXQRbkqllPfSfDlMWg"
+                ><img src="img/gmail (1).png" alt=""
+              /></a>
               <p>gabryelkolzenti@gmail.com</p>
             </div>
             <div class="contatoDados">
-              <a href="https://github.com/Gabryel-Kolzenti"><img src="img/github.png" alt="" /></a>
+              <a href="https://github.com/Gabryel-Kolzenti"
+                ><img src="img/github.png" alt=""
+              /></a>
               <p>github.com/Gabryel-Kolzenti</p>
             </div>
             <div class="contatoDados">
-              <a href="https://api.whatsapp.com/send/?phone=5551986278288&text&type=phone_number&app_absent=0"
+              <a
+                href="https://api.whatsapp.com/send/?phone=5551986278288&text&type=phone_number&app_absent=0"
                 ><img src="img/telephone-symbol-button.png" alt=""
               /></a>
               <p>(51) 98627 8288</p>
             </div>
             <div class="contatoDados">
-              <a href="https://www.linkedin.com/in/gabryel-kolzenti-arrache-1a1a201a1/"><img src="img/linkedin.png" alt="" /></a>
+              <a
+                href="https://www.linkedin.com/in/gabryel-kolzenti-arrache-1a1a201a1/"
+                ><img src="img/linkedin.png" alt=""
+              /></a>
               <p>linkedin.com/gabryel-kolzenti-arrache/</p>
             </div>
           </div>
